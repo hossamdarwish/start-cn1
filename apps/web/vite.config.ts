@@ -15,6 +15,9 @@ const config = defineConfig({
     tanstackStart(),
     viteReact(),
   ],
+  server: {
+    allowedHosts: ["sb-1rl8v17baten.vercel.run"],
+  },
 })
 
 export default config
