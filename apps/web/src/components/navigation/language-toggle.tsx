@@ -1,7 +1,6 @@
-import { Link, useNavigate } from "@tanstack/react-router"
+import { useNavigate } from "@tanstack/react-router"
 import type { Locale } from "@/lib/i18n"
 import { getAlternateLocale } from "@/lib/i18n"
-import { Button } from "@workspace/ui/components/button"
 import { setLocaleCookie } from "@/lib/cookies"
 
 export interface LanguageToggleProps {
@@ -28,15 +27,13 @@ export function LanguageToggle({ locale }: LanguageToggleProps) {
   }
 
   return (
-    <Button
-      variant="ghost"
-      size="sm"
+    <button
       onClick={handleLanguageSwitch}
-      className="gap-2"
+      className="inline-flex items-center justify-center rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-muted gap-2"
     >
       <span className="text-sm font-medium">
         {locale === "ar" ? "English" : "العربية"}
       </span>
-    </Button>
+    </button>
   )
 }

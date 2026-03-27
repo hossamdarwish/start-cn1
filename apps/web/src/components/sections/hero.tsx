@@ -1,8 +1,21 @@
 import type { Locale } from "@/lib/i18n"
-import { Button } from "@workspace/ui/components/button"
 
 export interface HeroSectionProps {
   locale: Locale
+}
+
+// Simple button implementation
+function Button({ children, variant = "default", ...props }: any) {
+  const baseClasses = "inline-flex items-center justify-center rounded-md px-6 py-3 font-medium transition-colors"
+  const variantClasses = variant === "default" 
+    ? "bg-primary text-primary-foreground hover:bg-primary/80"
+    : "border border-input hover:bg-muted"
+  
+  return (
+    <button className={`${baseClasses} ${variantClasses}`} {...props}>
+      {children}
+    </button>
+  )
 }
 
 export function HeroSection({ locale }: HeroSectionProps) {

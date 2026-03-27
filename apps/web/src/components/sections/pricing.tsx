@@ -1,9 +1,33 @@
 import type { Locale } from "@/lib/i18n"
-import { Button } from "@workspace/ui/components/button"
-import { Badge } from "@workspace/ui/components/badge"
 
 export interface PricingSectionProps {
   locale: Locale
+}
+
+// Simple button implementation
+function Button({ children, variant = "default", ...props }: any) {
+  const baseClasses = "inline-flex items-center justify-center rounded-md px-6 py-3 font-medium transition-colors"
+  const variantClasses = variant === "default" 
+    ? "bg-primary text-primary-foreground hover:bg-primary/80"
+    : "border border-input hover:bg-muted text-foreground"
+  
+  return (
+    <button className={`${baseClasses} ${variantClasses}`} {...props}>
+      {children}
+    </button>
+  )
+}
+
+// Simple badge implementation
+function Badge({ children, variant = "default" }: any) {
+  const baseClasses = "inline-flex items-center rounded-full px-3 py-1 text-xs font-medium"
+  const variantClasses = variant === "popular"
+    ? "bg-primary text-primary-foreground"
+    : "bg-muted text-foreground"
+  
+  return (
+    <span className={`${baseClasses} ${variantClasses}`}>{children}</span>
+  )
 }
 
 export function PricingSection({ locale }: PricingSectionProps) {

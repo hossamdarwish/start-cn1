@@ -1,7 +1,21 @@
 import { Link } from "@tanstack/react-router"
 import type { Locale } from "@/lib/i18n"
-import { Button } from "@workspace/ui/components/button"
 import { LanguageToggle } from "../navigation/language-toggle"
+
+// Simple button implementation
+function Button({ children, variant = "default", size = "sm", ...props }: any) {
+  const baseClasses = "inline-flex items-center justify-center rounded-md px-3 py-2 font-medium transition-colors"
+  const variantClasses = variant === "default" 
+    ? "bg-primary text-primary-foreground hover:bg-primary/80"
+    : "border border-input hover:bg-muted"
+  const sizeClasses = size === "sm" ? "text-sm" : "text-base"
+  
+  return (
+    <button className={`${baseClasses} ${variantClasses} ${sizeClasses}`} {...props}>
+      {children}
+    </button>
+  )
+}
 
 export interface HeaderProps {
   locale: Locale

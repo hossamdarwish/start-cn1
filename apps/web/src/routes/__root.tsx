@@ -1,7 +1,6 @@
 import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router"
-import { Direction } from "@radix-ui/react-direction"
 
-import appCss from "@workspace/ui/globals.css?url"
+import appCss from "@/globals.css?url"
 import { getLocaleDirection, getLocaleHtmlLang, normalizeLocale } from "@/lib/i18n"
 import type { Locale } from "@/lib/i18n"
 
@@ -79,13 +78,8 @@ export const Route = createRootRoute({
 })
 
 function RootDocument({ children }: { children: React.ReactNode }) {
-  // Get locale from URL or use default
-  const locale = normalizeLocale(typeof window !== "undefined" ? undefined : undefined)
-  const direction = getLocaleDirection(locale)
-  const htmlLang = getLocaleHtmlLang(locale)
-
   return (
-    <html lang={htmlLang} dir={direction} suppressHydrationWarning>
+    <html suppressHydrationWarning>
       <head>
         <HeadContent />
         <meta name="theme-color" content="#000000" />
@@ -94,9 +88,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
       <body>
-        <Direction dir={direction}>
-          {children}
-        </Direction>
+        {children}
         <Scripts />
       </body>
     </html>
