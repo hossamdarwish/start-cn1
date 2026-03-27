@@ -1,6 +1,6 @@
 import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router"
+import "@/globals.css"
 
-import appCss from "@/globals.css?url"
 import { getLocaleDirection, getLocaleHtmlLang, normalizeLocale } from "@/lib/i18n"
 import type { Locale } from "@/lib/i18n"
 
@@ -48,10 +48,6 @@ export const Route = createRootRoute({
         },
       ],
       links: [
-        {
-          rel: "stylesheet",
-          href: appCss,
-        },
         {
           rel: "canonical",
           href: locale === "ar" ? "https://saasplatform.com/ar/" : "https://saasplatform.com/",
