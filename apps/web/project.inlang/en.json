@@ -1,0 +1,114 @@
+{
+  "header": {
+    "logo": "SaaS Platform",
+    "nav": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "contact": "Contact"
+    },
+    "language_ar": "العربية",
+    "language_en": "English",
+    "theme_dark": "Dark",
+    "theme_light": "Light"
+  },
+  "hero": {
+    "title": "Build Your SaaS Platform with Confidence",
+    "subtitle": "Enterprise-grade solution with multilingual support and modern design",
+    "cta_primary": "Get Started",
+    "cta_secondary": "Learn More",
+    "badge": "Now with Arabic Support"
+  },
+  "features": {
+    "title": "Powerful Features",
+    "subtitle": "Everything you need to succeed",
+    "feature_1": {
+      "name": "Multilingual Support",
+      "description": "Seamless support for English and Arabic with automatic RTL layout"
+    },
+    "feature_2": {
+      "name": "Type-Safe Translations",
+      "description": "Compile-time guarantees for all your internationalization needs"
+    },
+    "feature_3": {
+      "name": "Modern UI Components",
+      "description": "Beautiful, accessible components built with shadcn/ui"
+    },
+    "feature_4": {
+      "name": "Server-Side Rendering",
+      "description": "Fast, SEO-friendly pages with TanStack Start"
+    },
+    "feature_5": {
+      "name": "Theme Support",
+      "description": "Built-in dark and light mode with user preferences"
+    },
+    "feature_6": {
+      "name": "Performance Optimized",
+      "description": "Zero-overhead translations and lazy-loaded assets"
+    }
+  },
+  "pricing": {
+    "title": "Simple Pricing",
+    "subtitle": "Choose the plan that fits your needs",
+    "plan_starter": {
+      "name": "Starter",
+      "price": "$29",
+      "period": "per month",
+      "description": "Perfect for getting started",
+      "features": [
+        "Up to 3 projects",
+        "Basic analytics",
+        "Community support",
+        "1 GB storage"
+      ],
+      "cta": "Get Started"
+    },
+    "plan_pro": {
+      "name": "Professional",
+      "price": "$99",
+      "period": "per month",
+      "description": "For growing teams",
+      "features": [
+        "Unlimited projects",
+        "Advanced analytics",
+        "Priority support",
+        "100 GB storage",
+        "API access"
+      ],
+      "cta": "Start Free Trial",
+      "badge": "Most Popular"
+    },
+    "plan_enterprise": {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "Contact us",
+      "description": "For large organizations",
+      "features": [
+        "Everything in Pro",
+        "Dedicated support",
+        "Custom integrations",
+        "Unlimited storage",
+        "SLA guarantee"
+      ],
+      "cta": "Contact Sales"
+    }
+  },
+  "footer": {
+    "company": "Company",
+    "product": "Product",
+    "resources": "Resources",
+    "legal": "Legal",
+    "links": {
+      "about": "About",
+      "blog": "Blog",
+      "careers": "Careers",
+      "features": "Features",
+      "pricing": "Pricing",
+      "docs": "Documentation",
+      "api": "API Reference",
+      "community": "Community",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "copyright": "© 2026 SaaS Platform. All rights reserved."
+  }
+}
