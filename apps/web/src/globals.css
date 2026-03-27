@@ -1,5 +1,4 @@
 @import "@fontsource-variable/noto-sans";
-@import "@fontsource-variable/noto-sans-arabic";
 @import "tailwindcss";
 
 :root {
@@ -21,7 +20,7 @@
   --color-border: 0 0% 89.8%;
   --color-input: 0 0% 89.8%;
   --color-ring: 0 0% 3.6%;
-  --font-sans: "Noto Sans Variable", "Noto Sans Arabic Variable", sans-serif;
+  --font-sans: "Noto Sans Variable", system-ui, -apple-system, sans-serif;
 }
 
 .dark {
